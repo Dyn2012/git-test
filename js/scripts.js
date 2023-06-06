@@ -1,7 +1,13 @@
-
-$(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-}); 
+var loginBtn = document.querySelector('.loginBtn');
+var resever = document.querySelector('.resever')
+loginBtn.addEventListener('click', showLogin);
+resever.addEventListener("click", showresever)
+function showLogin(){
+    $('#loginModal').modal('toggle');
+}
+function showresever(){
+    $('#reserve').modal('toggle');
+}
 
 
 
